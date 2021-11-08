@@ -1,0 +1,1286 @@
+*,*:before,*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+:root {    
+    font-family: 'Heebo', sans-serif;
+    --main-dark-color: #202025;
+    --dark-accent-color: #9e9e9e;
+    --brend-color: #ffc61a;
+    --button-color: #9f340a;
+}
+
+img {    
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 500px) {
+.wraper {
+      width: 360px;
+    }
+  }
+
+  
+  
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+.wraper{
+    max-width: 100%;    
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.top-div {
+    background-color: rgba(10, 7, 10, .4); 
+    display: grid;      
+    grid-template: 60px/repeat(2, minmax(350px, 1fr));    
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.top-div-mail {    
+    margin-left: 65px;
+}
+
+.mail-link {
+    text-decoration: none;
+    color:var(--dark-accent-color);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.mail-link:hover {
+    color: #fff;
+}
+
+.top-div-socials {
+    margin-right: 60px;
+    justify-self: end;
+}
+
+.social-img {
+    margin: 0 5px 0 5px;
+}
+
+.social-img img{
+    background-color: #fff;   
+    border: 1px #fff solid;
+    height: 25px;
+    width: 25px;
+}
+
+.social-img img:hover {
+    background-color: rgba(255, 255, 255, 0.507);   
+    border: 1px rgba(255, 255, 255, 0.5) solid;
+    height: 25px;
+    width: 25px;
+}
+
+header{
+    background-image: url(../img/taxi-group.webp);
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-content-wrp {
+    width: 90%;
+    margin: 0 auto;   
+    
+}
+
+.dark-bg {
+    background-color: rgba(10, 7, 10, .7);
+}
+
+nav{    
+    display: grid;
+    grid-template: 75px/repeat(3, minmax(350px, 1fr));
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    width: 150px;
+    height: 75px;    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.menu a:hover {
+    color: var(--brend-color);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    min-width: 350px;
+}
+
+.nav-number {    
+    justify-self: end;
+}
+
+.nav-number a {
+    color: var(--brend-color);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-number a:hover {
+    color: #fff;
+}
+
+.header-bottom-content-wrap {
+    display: grid;
+    grid-template-columns: minmax(350px, 0.9fr) 150px minmax(350px,1fr);
+    grid-template-rows: auto;
+}
+
+.divider-element {
+    background-color: var(--brend-color);
+    height: 4px;
+    width: 12%;    
+}
+
+.book-a-ride h2 {
+    font-size: 30px;
+    line-height: 1.33;
+    letter-spacing: 0;
+    font-weight: 900;    
+}
+
+.header-form-wrapper {     
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px 30px 20px 30px;
+    grid-area: 1/1/2/2;
+}
+
+#car-type,.header-form-wrapper input {
+    border: 2px rgb(228, 228, 228) solid;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--dark-accent-color);
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 15px 26px;    
+    line-height: 1.3333;
+    width: 95%;
+    margin: 15px auto;
+}
+
+.w-form__multiple-item {
+    justify-self: start;
+}
+.w-checkbox {
+    display: flex;
+}
+
+.w-checkbox > input {
+    width: 20px;
+    align-content: flex-start;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.w-checkbox__mask {
+    width: 15px;
+    height: 15px;
+}
+
+.header-form-button {
+    display: block;
+    width: 95%;
+    border: none;
+    background-color: var(--brend-color);
+    color: var(--main-dark-color);
+    padding: 14px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    height: 50px;
+  }
+  
+  .header-form-button:hover {
+    background-color: var(--button-color);
+    color: #fff;
+  }
+
+.reliable-taxi { 
+    grid-area: 1/3/2/4;       
+    align-self: center;
+    justify-self: end;
+}
+
+.reliable-taxi h2 {
+    color: #fff;
+    font-size: 68px;
+    font-weight: 900; 
+    display: block;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+.reliable-taxi-divider {
+    background-color: #fff;
+    height: 4px;
+    width: 12%;margin-top: 20px;  
+}
+
+.brend-text {
+    color: var(--brend-color);
+    font-weight: bold;
+    font-size: 19px;
+}
+.reliable-taxi p {
+    color: var(--dark-accent-color);
+    font-size: 19px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    display: block;
+}
+
+.learn-more-btn {
+    display: block;
+    width: 150px;
+    border: none;
+    background-color: var(--brend-color);
+    color: var(--main-dark-color);
+    padding: 14px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.learn-more-btn:hover{
+    background-color: var(--button-color);
+    color: #fff;
+}
+
+.our-taxi-rates-content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 60px;
+    line-height: 1.5;
+}
+
+.our-taxi-rates-text{
+    display: grid;
+    grid-template: auto/1fr;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.yellow-text-paragr {
+    color: var(--brend-color);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;    
+    text-transform: none;
+}
+
+.our-taxi-rates-title {
+    font-size: 40px;
+    color: var(--main-dark-color);
+    line-height: 1.33;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 900;
+    letter-spacing: 0;
+}
+
+.our-taxi-rates-title-divider {
+    background-color: var(--brend-color);
+    height: 4px;
+    width: 6%;  
+}
+
+.our-taxi-rates-paragr-vulgaris {
+    font-size: 19px;
+    line-height: 1.56;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: var(--dark-accent-color);
+    text-transform: none;
+}
+
+
+.book-a-ride{
+    background-color: #fff;   
+}
+
+.comfort-types img {    
+    height: 75px;
+    width: 75px;
+}
+
+.comfort-types-cnt {
+    padding: 40px 40px 20px 40px;
+    margin:10px;
+}
+
+.comfort-types-bold-span {
+    color: var(--main-dark-color);
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    line-height: 2;    
+}
+
+.form-button{
+    background-color: #ffc61a;
+    height: 32px;
+}
+.btn-lrn-more{
+    background-color: #ffc61a;
+    height: 32px;
+    width: 150px;
+}
+
+.order-btn {
+    margin-top: 40px;
+}
+
+.carrousel {  
+    margin: auto;
+}
+.slides {
+    display: grid;
+    grid-template: 490px/repeat(3, minmax(350px, 1fr));     
+    
+}
+
+.comfort-heading-logo {
+    font-size: 36px;
+    line-height: 1.33;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #202025;
+    text-transform: none;
+}
+
+.comfort-divider {
+    background-color: var(--main-dark-color);
+    height: 4px;
+    width: 12%;
+}
+
+.comfort-types-cnt {
+    background: #ffc61a;
+    
+}
+
+.comfort, .sport, .van, .luxury{
+    background: #ffc61a;
+    display: none;
+}
+
+.order-btn {
+    background-color:#b34700; 
+    padding: 10px 5px 10px 10px;
+    width: 140px; 
+}
+
+.order-btn:hover {
+    background-color: #000;
+}
+
+.order-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.order-btn-ctn img {
+    height: 25px;
+    width: 50px;  
+    margin-bottom: -8px;
+}
+.welcome{
+    background-image: url(../img/half-cab_optimized_1920.webp);
+    background-size: cover;
+    background-position: center; 
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.welcome-content-wrapper {
+    width: 90%;
+    margin: 0 auto;    
+    display: grid;
+    grid-template: 1fr/repeat(2, minmax(350px, 1fr));
+    align-self:center;
+}
+
+.welcome-content {
+    grid-area: 1/1/2/2;
+    justify-self: start;
+    align-self: center;
+    text-align: left;
+}
+
+.welcome-brend-color-paragr {
+    color: var(--brend-color);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.welcome-title {
+    font-size: 40px;
+    color: var(--main-dark-color);
+    line-height: 1.5;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 900;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+}
+
+.welcome-divider {
+    background-color: var(--brend-color);
+    height: 4px;
+    width: 6%;
+}
+
+.welcome-subtitle-paragr {    
+    min-width: 320px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--dark-accent-color);
+    font-size: 19px;
+    line-height: 1.5;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    letter-spacing: 0;
+}
+
+.welcome-list {
+    list-style: none;
+}
+.welcome-list li {
+    margin-top: 20px;
+}
+
+.welcome-list-img {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;    
+}
+
+.welcome-list-img-big {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.welcome-list-li-wrapper {
+    display: flex;
+    align-items:center;    
+}
+
+.welcome-list-content {
+    padding-top: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: var(--dark-accent-color);
+    text-transform: none;
+}
+
+.welcome-list-content h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: var(--main-dark-color);
+    text-transform: none;
+}
+
+.download-app-content-wrapp {
+    width: 90%;
+    margin: 0 auto;    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: minmax(320px,1fr) 15%;
+}
+
+.download-app-content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.download-app-content h2{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: 0; 
+    display: block;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 900;
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.download-brend-paragr {
+    color: var(--brend-color);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.download-action-span a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.download-brend-heading-span {
+    color: var(--brend-color);
+}
+
+.download-app-bottom-paragr {
+    margin-top: 40px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.download-button {    
+    margin-top: 30px;
+}
+
+.download-app-button {
+    background-color: var(--brend-color);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.download-button :hover {
+    background-color: var(--button-color);
+}
+
+.discount{
+    background-color: var(--brend-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.download-app {
+    background: url(../img/man-phone-cab.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;    
+}
+
+.download-app-content h2{
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.mobile-app-content-wrapp {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 90%;
+    margin: 0 auto;    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: minmax(320px,1fr) 55%;
+}
+
+.mobile-app-img-wrapper {  
+    width: 420px;
+    height: 620px;
+    justify-self: center;
+    padding: 0 15px 0 15px;
+}
+
+.mobile-app-img-wrapper img {
+    width: 80%;
+    height: 100%;
+    
+}
+
+.mobile-app-text-wrapper {
+    align-self: center;
+}
+
+.mobile-app-brend-paragr {
+    color: var(--brend-color);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.mobile-app-headings h2 {
+    font-size: 44px;
+    color: #202025;
+    line-height: 1.3;
+    font-family: Heebo,sans-serif;
+    font-weight: 900;
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mobile-app-headings  {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--dark-accent-color);
+}
+
+.mobile-app-divider {
+    height: 4px;
+    width: 8%;
+    background-color: var(--brend-color);
+    margin-bottom: 20px;
+}
+
+.mobile-app-list-wrapper ul li {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.mobile-app-list-wrapper ul li p {
+    font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: .03em;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--dark-accent-color);    
+}
+
+.apple-google-btn {
+    display: grid;
+    grid-template-rows: 70px;
+    grid-template-columns: repeat(2, 170px);
+    margin-top: 60px;
+}
+
+.app-store-btn {
+    grid-area: 1/1/2/2;   
+}
+
+.gl-play-btn {
+    grid-area: 1/2/2/3;    
+}
+
+.app-store-btn img {
+    border-radius: 7px;
+    width: 90%;
+}
+
+.gl-play-btn img {
+    border-radius: 7px;
+    width: 100%;
+}
+
+.view-box-wrap {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.discount-section-content {
+    width: 90%;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.discount-headings {
+    display: grid;
+    grid-template: repeat(4, auto)/minmax(350px 1fr);
+    justify-items: center;
+    margin: auto;
+    font-size: 44px;
+    font-weight: 900;
+    font-family: 'Heebo', serif;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: 0;    
+}
+
+.discount-headings-three p {
+    font-size: 19px;
+    line-height: 1.56;
+    letter-spacing: 0;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--main-dark-color);
+    text-transform: none;
+    opacity: 0.8;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.discount-headings-divider {
+    height: 4px;
+    width: 8%;
+    margin: auto;
+    background-color: var(--main-dark-color);
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 60%;
+    margin: auto;
+}
+
+.time {
+    align-self: center;
+}
+
+.time h2 {
+    display: block;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--main-dark-color);
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .countdown {
+        width: 90%;
+    }    
+    .time h2 {
+        font-size: 30px;
+        margin-right: 5px;
+        padding: 5px;
+    }
+    small {
+      font-size: 12px;      
+    }
+  }
+
+small {
+    display: block;
+    font-size: 24px;
+    color: var(--main-dark-color);
+    font-weight: 400;
+    font-family: Roboto,sans-serif;
+    opacity: .54;
+    margin: auto;
+    text-align: center;
+}
+
+.video {
+    background-image: url(../img/transparent-bg1.jpg);
+    background-repeat: no-repeat; 
+    background-size: 100% 50%;
+    margin-bottom: -550px;
+    position: relative;
+}
+
+.video-content-wrapper {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+.empty-box {
+    background-image: url(../img/video-bg.webp);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template: minmax(560px, 1fr)/minmax(350px, 1fr);
+    justify-items: center;
+    align-items: center;    
+    margin-bottom: 20px;
+}
+
+.video-play-button {
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.video-content-stat {
+    margin-top: 100px;    
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 25%);
+    justify-items: center;
+    align-items: center;
+}
+
+.video-stat-item {    
+    text-align: center;
+}
+
+.video-stat-item h2 {
+    color: var(--brend-color);
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: 0;
+    font-family: Heebo,sans-serif;
+    font-weight: 900;
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.video-stat-item p {
+   color: var(--dark-accent-color);
+   font-size: 17px;
+   line-height: 1.5;
+   letter-spacing: 0;
+   font-family: Roboto,sans-serif;
+   font-weight: 700;
+   text-decoration: none;
+   font-style: normal;
+}
+
+@media screen and (max-width: 500px) {
+    .video-stat-item h2 {
+        font-size: 26px;
+        margin-right: 5px;
+        padding: 5px;
+    }
+    .video-stat-item p {
+      font-size: 13px;      
+    }
+  }
+
+.video-stat-divider {
+    height: 3px;
+    width: 50px;
+    background-color: var(--dark-accent-color);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonials {    
+    padding-top: 400px;
+    background-color: #000000;    
+    padding-bottom: 20px;
+}
+
+.testimonials-content-wrap {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.brend-color-paragr {
+    color: var(--brend-color);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonials-content-wrap h2 {
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.33;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 900;
+    letter-spacing: 0;    
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonials-divider {
+    height: 4px;
+    width: 6%;
+    background-color: var(--brend-color);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.testimonials-paragr-vulgaris {
+    font-size: 19px;
+    line-height: 1.56;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: var(--dark-accent-color);
+    text-transform: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimSlides {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+}
+
+.testimSlides p {    
+    color: var(--dark-accent-color);
+    font-size: 17px;
+    line-height: 1.56;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: var(--dark-accent-color);
+    text-transform: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimSlides h3 {
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.33;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;    
+    text-align: center;    
+    margin-bottom: 40px; 
+}
+
+.testimSlides-item {
+    background-color: var(--main-dark-color);
+    margin: 20px;
+    padding: 50px 30px 20px;
+}
+
+.testim-image-container {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 40px;
+    margin: auto;    
+}
+
+.testim-image-container img {
+    width: 100%;
+    height: auto;   
+}
+
+.faq-section {
+    background-color: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.faq-section-content-wrap {
+    width: 90%;
+    margin: auto;
+    color: var(--dark-accent-color);
+}
+
+.faq-section-content-wrap h2 {
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.33;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 900;
+    letter-spacing: 0;    
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-heading-paragr {
+    font-size: 19px;
+    line-height: 1.56;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: var(--dark-accent-color);
+    text-transform: none;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.faq-accordion {
+    display: grid;
+    grid-template: repeat(4, 1fr)/repeat(2, minmax(350px, 1fr));
+}
+
+.faq-accordion .content-box .box-label {
+    position: relative;
+    margin: 10px;
+    padding: 0px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.faq-accordion .content-box .box-label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.faq-accordion .content-box.active .box-label::before {
+    content: '-';
+}
+
+.faq-accordion .content-box .box-content {
+    position: relative;
+    background-color: none;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.faq-accordion .content-box.active .box-content {
+    height: 50px;
+    padding: 0;
+}
+
+.box-label {
+    font-size: 19px;
+    line-height: 1.56;
+    letter-spacing: 0;
+    font-family: Roboto,sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: none;
+    border-bottom: 1px var(--main-dark-color) solid;
+}
+
+.box-content a {
+    text-decoration: none;
+    color: var(--brend-color);
+}
+
+.contacts-section {
+    background-color: var(--brend-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.contacts-section-content-wrapp {
+    width: 90%;
+    margin: auto;
+}
+
+.contacts-section-content {
+    min-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacts-section-content > div {
+    min-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.contacts-section-content h2 {
+    font-size: 30px;
+    line-height: 1.33;
+    letter-spacing: 0;
+    font-family: Heebo,sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-style: normal;
+    margin-bottom: 40px;
+    color: #000;
+    text-transform: none;
+}
+
+.contacts-section-content p {
+    font-size: 19px;
+    line-height: 1.56;
+    letter-spacing: 0;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--main-dark-color);
+    text-transform: none;
+}
+
+.contacts-socials-img-container a:hover {
+    padding: 0;
+    background: red;
+  }
+
+.contacts-section-address {
+    text-align: center;
+}
+
+.contacts-section-socials {
+    text-align: center;
+}
+
+.socials-container {
+    display: flex;    
+    justify-content: center;
+}
+
+.contacts-section-socials img {      
+    height: 50px;
+    width: 50px;
+    margin: 0 5px 0;
+}
+
+
+footer {
+    background-color: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-content-wrap {
+    width: 90%;
+    margin: auto;    
+}
+
+.footer-items-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo-container {
+    max-width: 300px;
+    color: var(--dark-accent-color);
+    font-size: 17px;
+}
+
+.footer-logo {
+    width: 120px;
+    height: 60px;
+}
+
+.footer-about-company h2, .footer-for-drivers h2, .footer-offers h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer-about-company a, .footer-for-drivers a {
+    text-decoration: none;
+    color: var(--dark-accent-color);
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.footer-about-company a:hover, .footer-for-drivers a:hover {
+    color: var(--brend-color);
+}
+
+.footer-offers input, button {
+    border-color:#9f340a;
+    background-color:var(--main-dark-color);
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.footer-offers button {
+    text-align: center;
+    background-color: var(--brend-color);
+    font-weight: 700;
+}
+
+.footer-offers button:hover {
+    background-color: var(--button-color);
+    color: #fff;
+}
+
+.time {
+    width: 100px;
+}
+
+
+
